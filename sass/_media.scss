@@ -1,0 +1,268 @@
+// ==|== media queries ======================================================
+// PLACEHOLDER Media Queries for Responsive Design.
+// These override the primary ('mobile first') styles
+// Modify as content requires.
+// ========================================================================== */
+
+@media #{$small} {
+
+	#site-canvas { 
+		background-position: center -80px;
+	}
+
+	#site-body {
+		.inner {
+			padding-top: 60px;
+		}
+	}
+	
+	#colophon {
+		float: left;
+		max-width: 640px;
+		width: 60%;
+		margin: 0 40px 0 0;
+	}
+	
+	#share {
+		float: left;
+	}
+	
+	.group-title {
+		float: left;
+		margin: 20px;
+		#projects & {
+			width: 130px;
+		}
+		#connect & {
+			width: 180px;
+		}
+	}
+
+	#bio {
+		padding: 40px;
+		margin: 0 auto 140px auto;
+		h1 {
+			font-size: 48px;
+			line-height: 45px;
+			margin-bottom: 25px;
+		}
+		p {
+			font-size: 20px;
+			line-height: 25px;
+			margin: 0 0 20px 0;
+		}
+		&:after {
+			bottom: -38px;
+			left: auto;
+			width: 60px;
+			height: 40px;
+			background-size: 100%;
+			margin: 0 40px;
+		}
+	}
+	
+	#projects,
+	#connect {
+		margin: 0 auto 80px auto;
+		ul {
+			max-width: none;
+			margin: 0;
+		}
+	}
+	
+	#projects { width: 460px; }
+	#connect { width: 510px; }
+	
+	.bubble {
+		#projects &,
+		#connect & {
+			&:nth-child(odd) {
+				float: left;
+			}
+			&:nth-child(even) {
+				float: left;
+			}
+		}
+	
+		a {
+			margin-right: 20px;
+		}
+		
+		&.ml {
+			a {
+				margin-top: -30px;
+				&:after {
+					@include triangle-fx(right, none);
+				}
+			}
+		}
+		
+		&.datm {
+			a {
+				margin-left: 60px;
+				&:after {
+					@include triangle-fx(right, none);
+				}
+			}
+		}
+		
+		&.gtb {
+			a {
+				margin-top: 20px;
+				margin-right: 0;
+				&:after {
+					@include triangle-fx(left, flip);
+				}
+			}
+		}
+		
+		&.mand {
+			a {
+				margin-top: -65px;
+				&:after {
+					@include triangle-fx(left, flip);
+				}
+			}
+		}
+		
+		&.flickr {
+			a {
+				&:after {
+					@include triangle-fx(left, flip);
+				}
+			}
+		}
+		
+		&.email {
+			a {
+			margin-top: -60px;
+				&:after {
+					@include triangle-fx(left, none);
+				}
+			}
+		}
+		
+		&.soundcloud {
+			a {
+				margin-left: 70px;
+				margin-right: 0;
+				&:after {
+					@include triangle-fx(right, flip);
+				}
+			}
+		}
+		
+		&.facebook {
+			a {
+				margin-top: -60px;
+				margin-left: 70px;
+				&:after {
+					@include triangle-fx(right, none);
+				}
+			}
+		}
+		
+		&.twitter {
+			a {
+				&:after {
+					@include triangle-fx(right, flip);
+				}
+			}
+		}
+		
+		&.tumblr {
+			a {
+				margin-top: -60px;
+				margin-left: 20px;
+				&:after {
+					@include triangle-fx(right, none);
+				}
+			}
+		}
+		
+		&.lastfm {
+			a {
+				&:after {
+					@include triangle-fx(left, flip);
+				}
+			}
+		}
+	}
+}
+
+@media #{$medium} {
+	
+	#site-head {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 900;
+	}
+	
+	#colophon {
+		margin: 0 60px 0 0;
+	}
+	
+	#site-body {
+		.inner {
+			padding-top: 120px;
+		}
+	}
+
+}
+
+@media #{$xmedium} {
+	
+	#site-canvas { 
+		background-position: center 90px;
+	}
+	
+	#bio {
+		float: left;
+		max-width: 49%;
+		&:after {
+			@include triangle-fx(right, none);
+		}
+	}
+	
+	#projects {
+		margin-top: 140px;
+		float: right;
+	}
+	
+	#connect {
+		clear: both;
+	}
+
+}
+
+@media #{$large} {
+
+	.inner {
+		max-width: 1140px;
+	}
+	
+	#bio {
+		max-width: none;
+		width: 520px;
+		margin-left: 40px;
+	}
+	
+	#projects {
+		float: left;
+		margin-left: 40px;
+	}
+
+}
+
+
+// ==|== print styles =======================================================
+// Print styles.
+// Inlined to avoid required HTTP connection: h5bp.com/r
+// ========================================================================== */
+
+@media print {
+  @include h5bp-media-print;
+  
+  /* Style adjustments for print go here */
+}

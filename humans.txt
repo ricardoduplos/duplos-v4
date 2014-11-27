@@ -1,0 +1,13 @@
+/* TEAM */
+
+Designer & Developer: Ricardo Mestre
+Site: http://duplos.org
+Twitter: @ricardoduplos
+Location: Lisbon, Portugal
+
+/* SITE */
+
+Last update: 2013/09/18
+Standards: HTML5, CSS3
+Software: Adobe Illustrator, Coda, CodeKit, OSX
+Frameworks & Extensions: Sass, Compass, Sassy-Strings, Compass H5bp

@@ -1,0 +1,81 @@
+// This file must be imported before loading html5-boilerplate
+
+// base
+$line-height: 1.4 !default;
+$font-color: #FFF !default;
+
+$link-color: #FFF !default;
+$link-hover-color: #FFF !default;
+$link-visited-color: #FFF !default;
+
+$selected-font-color: #FFF !default;
+$selected-background-color: #ff5e99 !default;
+
+$invalid-background-color: #f0dddd !default;
+
+// colors
+$base-color: #4C4F5A;
+$red: #CF4858;
+$orange: #F6624A;
+$turquoise: #16A79D;
+$blue-dark: #1B6A81;
+$blue-med: #4F8598;
+$blue-light: #69B1CB;
+$pink: #DC557A;
+$violet: #80628B;
+$yellow: #F4AC42;
+
+// fonts
+$base-font-family: "Raleway", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$base-font-regular: normal;
+$base-font-bold: bold;
+
+// Media variables
+$small-screen: 568px; // old: 520px
+$medium-screen: 768px;
+$xmedium-screen: 940px;
+$large-screen: 1140px;
+$xlarge-screen: 1280px;
+
+$screen: "only screen";
+$small: "only screen and (min-width:#{$small-screen})";
+$medium: "only screen and (min-width:#{$medium-screen})";
+$xmedium: "only screen and (min-width:#{$xmedium-screen})";
+$large: "only screen and (min-width:#{$large-screen})";
+$xlarge: "only screen and (min-width:#{$xlarge-screen})";
+$landscape: "only screen and (orientation: landscape)";
+$portrait: "only screen and (orientation: portrait)";
+
+@function encodeSVG($svg) {
+	$svg: str-replace($svg, '"', '%22');
+	$svg: str-replace($svg, ' ', '%20');
+	$svg: str-replace($svg, '<', '%3C'); 
+	$svg: str-replace($svg, '>', '%3E');
+	$svg: str-replace($svg, ',', '%2C');
+	$svg: str-replace($svg, '/', '%2F');
+	$svg: str-replace($svg, '=', '%3D');
+	$svg: str-replace($svg, '#', '%23');
+	$svg: str-replace($svg, "'", '');
+	$svg: str-replace($svg, 'image%2Fsvg+xml%2C', 'image/svg+xml,');
+	@return $svg;
+}
+
+
+// mixins
+
+@mixin triangle($color) {
+	background: url(encodeSVG('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="30px" height="20px" viewBox="0 0 30 20" enable-background="new 0 0 30 20" xml:space="preserve"><polygon points="30,20 30,0 0,0" fill="'+$color+'" /></svg>')) center top no-repeat;
+}
+
+@mixin triangle-fx($xpos, $transform) {
+	@if $xpos == left {
+			right: auto;
+			left: 0;
+		}
+	@if $xpos == right {
+			left: auto;
+			right: 0;
+		}
+	@if $transform == none { @include transform(none); }
+	@if $transform == flip { @include transform(scaleX(-1)); }
+}
