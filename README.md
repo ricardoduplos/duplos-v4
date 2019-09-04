@@ -10,7 +10,7 @@ Duplos - Ricardo Mestre’s Miscellany - was born in 2006, and this design is ve
 ## Development environment
 To set up the development environment for this website, you'll need to install the following on your system:
 
-- compass & sass
+- Compass & Sass
 - Sassy Strings ( $ gem install sassy-strings )
 - Compass H5bp ( $ gem install compass-h5bp )
 
