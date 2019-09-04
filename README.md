@@ -1,7 +1,7 @@
-#Duplos (v4)
+# Duplos (v4)
 
 > __Current status:__  
-This is the [live version](http://duplos.org). A refactor is on it's way.
+This is the [live version](http://duplos.org).
 
 Duplos - Ricardo Mestre’s Miscellany - was born in 2006, and this design is version 4.2.
 
