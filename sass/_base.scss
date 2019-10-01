@@ -24,6 +24,7 @@ $blue-light: #69B1CB;
 $pink: #DC557A;
 $violet: #80628B;
 $yellow: #F4AC42;
+$gray-dark: lighten($base-color, 8%);
 
 // fonts
 $base-font-family: "Raleway", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
@@ -49,7 +50,7 @@ $portrait: "only screen and (orientation: portrait)";
 @function encodeSVG($svg) {
 	$svg: str-replace($svg, '"', '%22');
 	$svg: str-replace($svg, ' ', '%20');
-	$svg: str-replace($svg, '<', '%3C'); 
+	$svg: str-replace($svg, '<', '%3C');
 	$svg: str-replace($svg, '>', '%3E');
 	$svg: str-replace($svg, ',', '%2C');
 	$svg: str-replace($svg, '/', '%2F');
