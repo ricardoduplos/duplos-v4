@@ -3,14 +3,14 @@
 > __Current status:__  
 This is the [live version](http://duplos.org).
 
-Duplos - Ricardo Mestre’s Miscellany - was born in 2006, and this design is version 4.2.
+Duplos - Ricardo Mestre’s Miscellany - was born in 2006, and this design is version 4.3.
 
 ![Duplos (v4) screenshot](https://raw.githubusercontent.com/ricardomestre/duplos-v4/master/duplos-v4-screenshot.png)
 
 ## Development environment
 To set up the development environment for this website, you'll need to install the following on your system:
 
-- Compass & Sass
+- Compass & Sass ( $ gem install compass )
 - Sassy Strings ( $ gem install sassy-strings )
 - Compass H5bp ( $ gem install compass-h5bp )
 
