@@ -6,7 +6,7 @@
 
 @media #{$small} {
 
-	#site-canvas { 
+	#site-canvas {
 		background-position: center -80px;
 	}
 
@@ -15,18 +15,18 @@
 			padding-top: 60px;
 		}
 	}
-	
-	#colophon {
+
+  #colophon {
 		float: left;
 		max-width: 640px;
-		width: 60%;
-		margin: 0 40px 0 0;
+		width: 100%;
+		margin: 0;
 	}
-	
+
 	#share {
 		float: left;
 	}
-	
+
 	.group-title {
 		float: left;
 		margin: 20px;
@@ -60,7 +60,7 @@
 			margin: 0 40px;
 		}
 	}
-	
+
 	#projects,
 	#connect {
 		margin: 0 auto 80px auto;
@@ -69,10 +69,10 @@
 			margin: 0;
 		}
 	}
-	
+
 	#projects { width: 460px; }
 	#connect { width: 510px; }
-	
+
 	.bubble {
 		#projects &,
 		#connect & {
@@ -83,11 +83,11 @@
 				float: left;
 			}
 		}
-	
+
 		a {
 			margin-right: 20px;
 		}
-		
+
 		&.ml {
 			a {
 				margin-top: -30px;
@@ -96,7 +96,7 @@
 				}
 			}
 		}
-		
+
 		&.datm {
 			a {
 				margin-left: 60px;
@@ -105,7 +105,7 @@
 				}
 			}
 		}
-		
+
 		&.gtb {
 			a {
 				margin-top: 20px;
@@ -115,7 +115,7 @@
 				}
 			}
 		}
-		
+
 		&.mand {
 			a {
 				margin-top: -65px;
@@ -124,7 +124,7 @@
 				}
 			}
 		}
-		
+
 		&.flickr {
 			a {
 				&:after {
@@ -132,7 +132,7 @@
 				}
 			}
 		}
-		
+
 		&.email {
 			a {
 			margin-top: -60px;
@@ -141,7 +141,7 @@
 				}
 			}
 		}
-		
+
 		&.soundcloud {
 			a {
 				margin-left: 70px;
@@ -151,8 +151,8 @@
 				}
 			}
 		}
-		
-		&.facebook {
+
+		&.github {
 			a {
 				margin-top: -60px;
 				margin-left: 70px;
@@ -161,7 +161,7 @@
 				}
 			}
 		}
-		
+
 		&.twitter {
 			a {
 				&:after {
@@ -169,7 +169,7 @@
 				}
 			}
 		}
-		
+
 		&.tumblr {
 			a {
 				margin-top: -60px;
@@ -179,7 +179,7 @@
 				}
 			}
 		}
-		
+
 		&.lastfm {
 			a {
 				&:after {
@@ -191,18 +191,18 @@
 }
 
 @media #{$medium} {
-	
+
 	#site-head {
 		position: fixed;
 		top: 0;
 		left: 0;
 		z-index: 900;
 	}
-	
+
 	#colophon {
-		margin: 0 60px 0 0;
+		margin: 0;
 	}
-	
+
 	#site-body {
 		.inner {
 			padding-top: 120px;
@@ -212,11 +212,11 @@
 }
 
 @media #{$xmedium} {
-	
-	#site-canvas { 
+
+	#site-canvas {
 		background-position: center 90px;
 	}
-	
+
 	#bio {
 		float: left;
 		max-width: 49%;
@@ -224,12 +224,12 @@
 			@include triangle-fx(right, none);
 		}
 	}
-	
+
 	#projects {
 		margin-top: 140px;
 		float: right;
 	}
-	
+
 	#connect {
 		clear: both;
 	}
@@ -241,13 +241,13 @@
 	.inner {
 		max-width: 1140px;
 	}
-	
+
 	#bio {
 		max-width: none;
 		width: 520px;
 		margin-left: 40px;
 	}
-	
+
 	#projects {
 		float: left;
 		margin-left: 40px;
@@ -263,6 +263,6 @@
 
 @media print {
   @include h5bp-media-print;
-  
+
   /* Style adjustments for print go here */
 }
