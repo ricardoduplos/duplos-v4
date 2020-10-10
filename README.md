@@ -3,7 +3,7 @@
 > __Current status:__  
 This is the [live version](http://duplos.org).
 
-Duplos - Ricardo's Miscellany - was born in 2006, and this design is version 4.3.
+Duplos - Ricardo's Miscellany - was born in 2006, and this design is version 4.3 (2014).
 
 ![Duplos (v4) screenshot](https://raw.githubusercontent.com/ricardomestre/duplos-v4/master/duplos-v4-screenshot.png)
 
